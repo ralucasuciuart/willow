@@ -1,0 +1,92 @@
+<html>
+
+<head>
+	 <title>Home | willow</title>
+	 <meta charset="utf-8">
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	 <link rel="stylesheet" type="text/css" href="willowstyle.css">
+	 <link rel="shortcut icon" type="image/png" href="media/favicon.svg">
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+<div class="navigation">
+   	 <a id="title" href="#">willow</a>
+     <div class="links">
+     	<a id="navlink" href="index.html">home</a>
+ 	 	<a id="navlink" href="folio.html">folio</a>
+ 	 	<a id="navlink" href="contact.html">contact</a>
+    </div>
+</div>
+
+<!-- CONTENT -->
+<!-- 1  -->
+<div class="index_content">
+<img id="index_img_1" src="media/index1.jpg" alt="">
+	<div class="index_txt_content">
+		<h3 id="index_txt_h3">the good old days.</h3>
+		<p id="index_p_1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+      ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		<a id="index_btn" href="folio.html">DISCOVER</a>
+	</div>	
+</div>
+
+<!-- 2 -->
+<div class="index_content_2">
+<img id="index_img_2" src="media/index2.jpg" alt="">
+</div>	
+
+<!-- 3 -->
+<h1 id="index_cards_h1">more from willow</h1>
+<div class="index_cards">
+	<div class="card">
+		<img id="index_cards_img" src="media/shop.svg">
+		<h2 id="index_cards_h2">shop</h2>
+		<h3 id="index_cards_h3">Shop original retro photography prints.</h3>
+		<a id="index_cards_a" href="#">Visit Store</a>
+	</div>	
+	<div class="card">
+		<img id="index_cards_img" src="media/blog.svg">
+		<h2 id="index_cards_h2">blog</h2>
+		<h3 id="index_cards_h3">Weekly articles about vintage photography and film.</h3>
+		<a id="index_cards_a" href="#">Read Blog</a>
+	</div>
+	<div class="card">
+		<img id="index_cards_img" src="media/newsletter.svg">
+		<h2 id="index_cards_h2">newsletter</h2>
+		<h3 id="index_cards_h3">Industry tips, news, events and more in one newsletter!</h3>
+		<a id="index_cards_a" href="#">Subscribe</a>
+	</div>	
+</div>
+
+<!-- FOOTER -->
+<div>
+	<p id="footer_logo">willow</p>
+<p id="rsa_name"><a href="https://www.ralucasuciuart.com/">ralucasuciuart.com</a></p>
+<div class="footer">
+	<div class="rsa">
+		<a id="rsa_link" href="https://www.ralucasuciuart.com/">Website</a>
+		<a id="rsa_link" href="https://www.behance.net/ralucasuciu">Behance</a>
+		<a id="rsa_link" href="mailto:ralucasuciuart@gmail.com">Email</a>
+		<a id="rsa_link" href="https://github.com/ralucasuciuart">GitHub</a>
+	</div>
+</div>
+</div>
+
+<button onclick="topFunction();" id="top_btn">&#9650;</button>
+
+<script type="text/javascript" src="topbtn.js"></script>
+<script type="text/javascript" src="vanilla-tilt.js"></script>
+<script type="text/javascript">
+		VanillaTilt.init(document.querySelectorAll(".card"), {
+		max: 2,
+		speed: 400,
+		glare: true,
+		"max-glare": 0.2,
+		gyroscope: true,
+	});
+	</script>
+
+</body>
+</html>
