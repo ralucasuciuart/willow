@@ -1,0 +1,88 @@
+<html>
+
+<head>
+	 <title>Contact | willow</title>
+	 <meta charset="utf-8">
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	 <link rel="stylesheet" type="text/css" href="willowstyleplay.css">
+	 <link rel="shortcut icon" type="image/png" href="media/favicon.svg">
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+<div class="navigation">
+   	 <a id="title" href="#">willow</a>
+     <div class="links">
+     	<a id="navlink" href="index.html">home</a>
+ 	 	<a id="navlink" href="folio.html">folio</a>
+ 	 	<a id="navlink" href="contact.html">contact</a>
+    </div>
+</div>
+
+<!-- CONTACT CARD -->
+<h3 id="contact_h3">connect with willow</h3>
+<div class="contact">
+	<div class="contact_wrap">
+		<div class="info">
+			<h3 id="info_h3">info</h3>
+			<p id="info_p">Willow Rd. 17<br>Nowhere, City<br><br><br>Mon-Fri 08:00-17:00<br>Sat-Sun CLOSED<br><br>willow@email.com<br><br>TEL: (+23)023456555<br>FAX: (+23)0123456555</p>
+			<div class="socials">
+				<img id="social_icon" src="media/fb.png">
+				<img id="social_icon" src="media/ig.png">
+				<img id="social_icon" src="media/twitter.png">
+			</div>
+		</div>
+	</div>
+	<div class="contact_wrap">
+		<div class="contact_card">
+			<form onsubmit="return false;">
+				<label for="fname">full name</label>
+				<input id="fname" type="text" name="firstname" placeholder="Your name...">
+
+				<label for="email">email</label>
+				<input id="email" type="text" name="email" placeholder="Your email...">
+
+				<label for="subject">subject</label>
+				<input id="subject" type="text" name="subject" placeholder="Enter subject...">
+
+				<label for="message">message</label>
+				<textarea id="message" name="message" placeholder="Type your message..."></textarea>
+
+				<input type="submit" value="SUBMIT">
+			</form>
+		</div>
+	</div>
+</div>
+
+
+<!-- FOOTER -->
+<div>
+	<p id="footer_logo">willow</p>
+<p id="rsa_name"><a href="https://www.ralucasuciuart.com/">ralucasuciuart.com</a></p>
+<div class="footer">
+	<div class="rsa">
+		<a id="rsa_link" href="https://www.ralucasuciuart.com/">Website</a>
+		<a id="rsa_link" href="https://www.behance.net/ralucasuciu">Behance</a>
+		<a id="rsa_link" href="mailto:ralucasuciuart@gmail.com">Email</a>
+		<a id="rsa_link" href="https://github.com/ralucasuciuart">GitHub</a>
+	</div>
+</div>
+</div>
+
+
+<button onclick="topFunction();" id="top_btn">&#9650;</button>
+
+<script type="text/javascript" src="topbtn.js"></script>
+<script type="text/javascript" src="vanilla-tilt.js"></script>
+<script type="text/javascript">
+		VanillaTilt.init(document.querySelectorAll(".contact_wrap"), {
+		max: 4,
+		speed: 400,
+		glare: true,
+		"max-glare": 0.2,
+		gyroscope: true,
+	});
+	</script>
+</body>
+</html>
