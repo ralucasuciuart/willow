@@ -1,0 +1,133 @@
+<html>
+
+<head>
+	 <title>Folio | willow</title>
+	 <meta charset="utf-8">
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	 <link rel="stylesheet" type="text/css" href="willowstyle.css">
+	 <link rel="shortcut icon" type="image/png" href="media/favicon.svg">
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+<div class="navigation" id="navbar">
+   	 <a id="title" href="#">willow</a>
+     <div class="links">
+     	<a id="navlink" href="index.html">home</a>
+ 	 	<a id="navlink" href="folio.html">folio</a>
+ 	 	<a id="navlink" href="contact.html">contact</a>
+    </div>
+</div>
+
+<!-- CONTENT -->
+<div class="gallery">
+	<div class="column">
+			<div class="image">
+				<a id="txt_overlay" href="#">click to zoom</a>
+				<img class="gallery_img" src="media/1folio.jpg" alt="mountains" onclick="topFunction();">
+			</div>
+			<div class="image">
+				<a id="txt_overlay" href="#">click to zoom</a>
+				<img class="gallery_img" src="media/2folio.jpg" alt="black cat" onclick="topFunction();">
+			</div>
+			<div class="image">
+				<a id="txt_overlay" href="#">click to zoom</a>
+				<img class="gallery_img" src="media/3folio.jpg" alt="woman vintage" onclick="topFunction();">
+			</div>
+			<div class="image">
+				<a id="txt_overlay" href="#">click to zoom</a>
+				<img class="gallery_img" src="media/4folio.jpg" alt="beach cliff" onclick="topFunction();">
+			</div>
+	</div>
+	<div class="column">
+			<div class="image">
+	    		<a id="txt_overlay" href="#">click to zoom</a>
+	    		<img class="gallery_img" src="media/5folio.jpg" alt="guitar" onclick="topFunction();">
+	    	</div>
+	    	<div class="image">
+	    		<a id="txt_overlay" href="#">click to zoom</a>
+				<img class="gallery_img" src="media/6folio.jpg" alt="woman portrait" onclick="topFunction();">
+			</div>
+			<div class="image">
+				<a id="txt_overlay" href="#">click to zoom</a>
+				<img class="gallery_img" src="media/7folio.jpg" alt="woman nature" onclick="topFunction();">
+			</div>
+			<div class="image">
+			<a id="txt_overlay" href="#">click to zoom</a>
+			<img class="gallery_img" src="media/8folio.jpg" alt="sun" onclick="topFunction();">
+			</div>
+	</div>
+	<div class="column">
+			<div class="image">
+				<a id="txt_overlay" href="#">click to zoom</a>
+				<img class="gallery_img" src="media/9folio.jpg" alt="woman blue" onclick="topFunction();">
+			</div>
+			<div class="image">
+				<a id="txt_overlay" href="#">click to zoom</a>
+				<img class="gallery_img" src="media/10folio.jpg" alt="woman neon" onclick="topFunction();">
+			</div>
+			<div class="image">
+				<a id="txt_overlay" href="#">click to zoom</a>
+				<img class="gallery_img" src="media/11folio.jpg" alt="sea waves" onclick="topFunction();">
+			</div>
+			<div class="image">
+				<a id="txt_overlay" href="#">click to zoom</a>
+				<img class="gallery_img" src="media/12folio.jpg" alt="chinese house" onclick="topFunction();">
+			</div>
+	</div>  
+</div>
+
+<div id="modal_bkg"></div>
+<div id="myModal" class="modal">
+	<span class="close" onclick="closeFunction()">&times;</span>
+	<img class="modal_content" id="img01">
+</div>
+
+
+<!-- FOOTER -->
+<p id="footer_logo">willow</p>
+<p id="rsa_name"><a href="https://www.ralucasuciuart.com/">ralucasuciuart.com</a></p>
+<div class="footer">
+	<div class="rsa">
+		<a id="rsa_link" href="https://www.ralucasuciuart.com/">Website</a>
+		<a id="rsa_link" href="https://www.behance.net/ralucasuciu">Behance</a>
+		<a id="rsa_link" href="mailto:ralucasuciuart@gmail.com">Email</a>
+		<a id="rsa_link" href="https://github.com/ralucasuciuart">GitHub</a>
+	</div>
+</div>
+
+<button onclick="topFunction();" id="top_btn">&#9650;</button>
+<script type="text/javascript" src="topbtn.js"></script>
+
+<script type="text/javascript">
+var modal = document.getElementById("myModal");
+var img = document.getElementsByClassName('gallery_img');
+var modalImg = document.getElementById("img01");
+var navbar = document.getElementById("navbar");
+var modalBkg = document.getElementById("modal_bkg");
+
+var showModal = function() {
+	modal.style.display = "block";
+	modalImg.src = this.src;
+	navbar.style.position = "static";
+	modalBkg.style.display = "block";
+}
+
+for ( var i = 0; i < img.length; i++) {
+	img[i].addEventListener('click', showModal);
+}
+
+var span = document.getElementByClassName("close")[0];
+
+span.onclick = function() {closeFunction()};
+
+ function closeFunction() {
+	modal.style.display = "none";
+	navbar.style.position = "fixed";
+	modalBkg.style.display = "none";
+}
+</script>
+
+</body>
+</html>
