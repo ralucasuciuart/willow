@@ -1,0 +1,59 @@
+<html>
+
+<head>
+	 <title>Page Not Found | willow</title>
+	 <meta charset="utf-8">
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	 <link rel="stylesheet" type="text/css" href="willowstyle.css">
+	 <link rel="shortcut icon" type="image/png" href="favicon.svg">
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+<div class="navigation">
+   	 <a id="title" href="#">willow</a>
+     <div class="links">
+     	<a id="navlink" href="index.html">home</a>
+ 	 	<a id="navlink" href="folio.html">folio</a>
+ 	 	<a id="navlink" href="contact.html">contact</a>
+    </div>
+</div>
+
+<!-- 404 MESSAGE -->
+<div class="error_message" data-tilt data-tilt-full-page-listening>
+	<img id="error_img" src="gradient1.jpg">
+	<div class="error_txt">
+		<h3 id="error_h3">oh no.</h3>
+		<p id="error_p">Something went terribly wrong.<br>You can go back <a id="home_link" href="index.html">home</a>, or stay here and play around with this <a id="vnla_tilt" href="https://micku7zu.github.io/vanilla-tilt.js/">cool card!</a></p>
+	</div>
+</div>
+
+<!-- FOOTER -->
+<p id="footer_logo">willow</p>
+<p id="rsa_name"><a href="https://www.ralucasuciuart.com/">ralucasuciuart.com</a></p>
+<div class="footer">
+	<div class="rsa">
+		<a id="rsa_link" href="https://www.ralucasuciuart.com/">Website</a>
+		<a id="rsa_link" href="https://www.behance.net/ralucasuciu">Behance</a>
+		<a id="rsa_link" href="mailto:ralucasuciuart@gmail.com">Email</a>
+		<a id="rsa_link" href="https://github.com/ralucasuciuart">GitHub</a>
+	</div>
+</div>
+
+<button onclick="topFunction();" id="top_btn">&#9650;</button>
+
+<script type="text/javascript" src="topbtn.js"></script>
+<script type="text/javascript" src="vanilla-tilt.js"></script>
+<script type="text/javascript">
+		VanillaTilt.init(document.querySelectorAll(".error_message"),{
+		max: 6,
+		speed: 400,
+		glare: true,
+		"max-glare": 0.6,
+		gyroscope: true,
+	});
+	</script>
+
+</body>
+</html>
