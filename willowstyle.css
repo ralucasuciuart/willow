@@ -258,7 +258,7 @@ body {
 
 /* GO TO TOP */
 #top_btn {
-	display: none;
+	display: block;
 	position: fixed;
 	bottom: 20px;
 	right: 45px;
@@ -272,7 +272,6 @@ body {
 	font-size: 30px;
 	color: #171717;
 	text-align: center;
-	vertical-align: middle;
 	transition: all .2s ease;
 }
 
