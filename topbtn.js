@@ -7,14 +7,11 @@ function scrollFunction() {
 		mybutton.style.display = "block";
 
 	} else {
-		mybutton.style.display = "none"
-		
+		mybutton.style.display = "none"	
 	}
-
 }
 
 function topFunction(){
 	document.body.scrollTop = 0;
 	document.documentElement.scrollTop = 0;
-
 }
