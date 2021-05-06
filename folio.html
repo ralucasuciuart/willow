@@ -7,6 +7,12 @@
 	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	 <link rel="stylesheet" type="text/css" href="willowstyle.css">
 	 <link rel="shortcut icon" type="image/png" href="favicon.svg">
+
+	 <script type="text/javascript">
+	 	function topFunction(){
+		document.body.scrollTop = 0;
+		document.documentElement.scrollTop = 0;}
+	 </script>
 </head>
 
 <body>
@@ -98,37 +104,35 @@
 	</div>
 </div>
 
-<button onclick="topFunction();" id="top_btn">&#9650;</button>
-<script type="text/javascript" src="topbtn.js"></script>
+<button onclick="topFunction()" id="top_btn">&#9650;</button>
 
 <script type="text/javascript">
-var modal = document.getElementById("myModal");
-var img = document.getElementsByClassName('gallery_img');
-var modalImg = document.getElementById("img01");
-var navbar = document.getElementById("navbar");
-var modalBkg = document.getElementById("modal_bkg");
+		var modal = document.getElementById("myModal");
+		var img = document.getElementsByClassName('gallery_img');
+		var modalImg = document.getElementById("img01");
+		var navbar = document.getElementById("navbar");
+		var modalBkg = document.getElementById("modal_bkg");
 
-var showModal = function() {
-	modal.style.display = "block";
-	modalImg.src = this.src;
-	navbar.style.position = "static";
-	modalBkg.style.display = "block";
-}
+		var showModal = function() {
+			modal.style.display = "block";
+			modalImg.src = this.src;
+			navbar.style.position = "static";
+			modalBkg.style.display = "block";
+		}
 
-for ( var i = 0; i < img.length; i++) {
-	img[i].addEventListener('click', showModal);
-}
+		for ( var i = 0; i < img.length; i++) {
+			img[i].addEventListener('click', showModal);
+		}
 
-var span = document.getElementByClassName("close")[0];
+		var span = document.getElementsByClassName("close")[0];
 
-span.onclick = function() {closeFunction()};
+		span.onclick = function() {closeFunction()};
 
- function closeFunction() {
-	modal.style.display = "none";
-	navbar.style.position = "fixed";
-	modalBkg.style.display = "none";
-}
+ 		function closeFunction() {
+			modal.style.display = "none";
+			navbar.style.position = "fixed";
+			modalBkg.style.display = "none";
+		}
 </script>
-
 </body>
 </html>
