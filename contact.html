@@ -7,6 +7,23 @@
 	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	 <link rel="stylesheet" type="text/css" href="willowstyle.css">
 	 <link rel="shortcut icon" type="image/png" href="favicon.svg">
+	
+	 <script type="text/javascript">
+	 	function topFunction(){
+		document.body.scrollTop = 0;
+		document.documentElement.scrollTop = 0;}
+	 </script>
+
+	 <script type="text/javascript" src="vanilla-tilt.js"></script>
+         <script type="text/javascript">
+		VanillaTilt.init(document.querySelectorAll(".contact_wrap"), {
+		max: 4,
+		speed: 400,
+		glare: true,
+		"max-glare": 0.2,
+		gyroscope: true,
+	        });
+	 </script>
 </head>
 
 <body>
@@ -75,16 +92,5 @@
 
 <button onclick="topFunction();" id="top_btn">&#9650;</button>
 
-<script type="text/javascript" src="topbtn.js"></script>
-<script type="text/javascript" src="vanilla-tilt.js"></script>
-<script type="text/javascript">
-		VanillaTilt.init(document.querySelectorAll(".contact_wrap"), {
-		max: 4,
-		speed: 400,
-		glare: true,
-		"max-glare": 0.2,
-		gyroscope: true,
-	});
-	</script>
 </body>
 </html>
