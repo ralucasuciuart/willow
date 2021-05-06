@@ -7,23 +7,13 @@
 	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	 <link rel="stylesheet" type="text/css" href="willowstyle.css">
 	 <link rel="shortcut icon" type="image/png" href="favicon.svg">
-	
+
 	 <script type="text/javascript">
 	 	function topFunction(){
 		document.body.scrollTop = 0;
 		document.documentElement.scrollTop = 0;}
 	 </script>
 
-	 <script type="text/javascript" src="vanilla-tilt.js"></script>
-         <script type="text/javascript">
-		VanillaTilt.init(document.querySelectorAll(".contact_wrap"), {
-		max: 4,
-		speed: 400,
-		glare: true,
-		"max-glare": 0.2,
-		gyroscope: true,
-	        });
-	 </script>
 </head>
 
 <body>
@@ -44,8 +34,7 @@
 	<div class="contact_wrap">
 		<div class="info">
 			<h3 id="info_h3">info</h3>
-			<p id="info_p">Willow Rd. 17<br>Nowhere, City<br><br><br>Mon-Fri 08:00-17:00<br>Sat-Sun CLOSED<br><br>willow@email.com<br><br>
-				TEL: (+23)023456555<br>FAX: (+23)0123456555</p>
+			<p id="info_p">Willow Rd. 17<br>Nowhere, City<br><br><br>Mon-Fri 08:00-17:00<br>Sat-Sun CLOSED<br><br>willow@email.com<br><br>TEL: (+23)023456555<br>FAX: (+23)0123456555</p>
 			<div class="socials">
 				<img id="social_icon" src="fb.png">
 				<img id="social_icon" src="ig.png">
@@ -92,5 +81,15 @@
 
 <button onclick="topFunction();" id="top_btn">&#9650;</button>
 
+
+<script type="text/javascript" src="vanilla-tilt.js"></script>
+<script type="text/javascript">
+	VanillaTilt.init(document.querySelectorAll(".contact_wrap"), {
+	max: 4,
+	speed: 400,
+	glare: true,
+	"max-glare": 0.2,
+	});
+</script>
 </body>
 </html>
