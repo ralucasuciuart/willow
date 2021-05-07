@@ -152,8 +152,7 @@ body {
 	top: 0;
 	width: 100%;
 	height: 100%;
-	z-index: 98;
-	overflow: auto;
+	z-index: 98;	
 }
 
 .modal_content {
@@ -294,7 +293,7 @@ body {
 	max-width: 100%;
 	height: auto;
 	display: table-cell;
-	vertical-align: middle;
+	
 	padding: 0 50px;
 }
 
@@ -350,7 +349,7 @@ body {
 	transition: all .15s linear;
 }
 
-@media only screen and (max-width: 700px){
+@media only screen and (max-width: 800px){
 	.column{
 		flex: 100%;
 		max-width: 100%;
@@ -358,18 +357,25 @@ body {
 	.index_content {
 		display: flex;
 		flex-wrap: wrap;
-		flex: 50%;
+		flex: 100%;
 		width: 100%;
 		margin-top: 90px;
 	}
 	#index_img_1 {
-		padding: 15px 0 0 15px;
+		margin-left: auto;
+		margin-right: auto;
 	}
 	.index_cards {
 		display: flex;
 		flex-wrap: wrap;
-		flex: 40%;
-		width: 80%;
+		flex-wrap: 100%;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+		justify-content: center;
+	}
+	.card{
+		margin: 20px auto;
 	}
 	.contact{
 		display: flex;
@@ -424,19 +430,17 @@ body {
 
 .index_cards {
 	display: flex;
-	flex-direction: row;
-	margin: 0 auto 120px auto;
-	width: 80%;
+	margin: 30px auto 120px auto;
+	width: 100%;
 	height: auto;
-	padding: 10px 0;
-	background: transparent;
 }
 
 .card {
  	background: #171717;
 	text-align: center;
-	padding: 130px 30px 90px 30px;
-	width: 100%;
+	padding: 90px 30px;
+	width: 70%;
+	height: auto;
 	margin: 20px 40px;
 	border-radius: 30px;
 	outline: none;
@@ -465,7 +469,7 @@ body {
 	font-family: 'Lato', sans-serif;
 	font-weight: 400;
 	font-size: 13px;
-	width: 240px;
+	width: 70%;
 	margin-right: auto;
 	margin-left: auto;
 }
@@ -479,14 +483,13 @@ body {
 	font-weight: 900;
 	padding: 12px 24px;
 	border-radius: 100px;
-	transition: all .1s ease;
 }
 
 #index_cards_a:hover{
 	background: transparent;
 	box-shadow: inset 0 0 0 2.5px #f7f7f7;
 	color: #f7f7f7;
-	transition: all .1s ease;
+	transition: all .1s linear;
 }
 
 /* CONTACT CARD */
