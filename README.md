@@ -3,13 +3,7 @@
 Hi. This is my first finished website design project made in HTML/CSS (with some minimal JS). 
 
 
-Javascript codes used:
-Vanilla Tilt (https://micku7zu.github.io/vanilla-tilt.js/)
 
+Follow me:
 
-
-Follow me :)
-
-https://www.ralucasuciuart.com/
-https://www.behance.net/ralucasuciu
-ralucasuciuart@gmail.com
+[Web](https://www.ralucasuciuart.com/) [Behance](https://www.behance.net/ralucasuciu) [Email](ralucasuciuart@gmail.com)
