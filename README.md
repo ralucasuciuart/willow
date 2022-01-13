@@ -1,6 +1,5 @@
-# willow.github.io
 
-Hi. This is my first finished website design project made in HTML/CSS (with some minimal JS). 
+Hi. This is my first web dev project made in HTML/CSS (with some minimal JS). 
 
 
 
